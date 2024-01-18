@@ -26,7 +26,12 @@ class _SmallContainerState extends State<SmallContainer> {
         Container(
           height: 60,
           width: 60,
-          decoration: BoxDecoration(color: widget.color ?? Colors.grey.withOpacity(.1), borderRadius: BorderRadius.circular(20)),
+          decoration: BoxDecoration(
+            color: widget.color ?? Colors.grey.withOpacity(.1),
+            borderRadius: BorderRadius.circular(
+              20,
+            ),
+          ),
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Image.asset(widget.image),
